@@ -4,7 +4,7 @@
 Allows you to customize the Cuis wallpaper with solid colors, images, or animated wallpapers.
 
 ## Requirements:
-You will need the example file `StaticExample.jpg` and the example folder `DynamicExample` found in the repository.
+You will need in the root folder the example file `StaticExample.jpg` and the example folder `DynamicExample` found in the repository.
 > In the future, I will look for a way to include these test files and examples in the package.
 
 ## Usage:
