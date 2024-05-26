@@ -1,6 +1,6 @@
-'From Cuis6.2 [latest update: #6156] on 26 May 2024 at 3:28:06 am'!
+'From Cuis6.2 [latest update: #6156] on 26 May 2024 at 4:58:31 pm'!
 'Description '!
-!provides: 'WallpaperEngine' 1 0!
+!provides: 'WallpaperEngine' 1 1!
 SystemOrganization addCategory: #'WallpaperEngine-UI'!
 SystemOrganization addCategory: #'WallpaperEngine-Model'!
 
@@ -470,8 +470,9 @@ selected
 selectionIndex
 	^ index! !
 
-!WallpaperEngineWindowModel methodsFor: 'user interface support' stamp: 'S.V. 5/25/2024 21:09:02'!
+!WallpaperEngineWindowModel methodsFor: 'user interface support' stamp: 'S.V. 5/26/2024 16:57:18'!
 selectionIndex: anIndex
+	(anIndex = 0) ifTrue: [ ^ self ].
 	index := anIndex.
 	self triggerEvent: #selectionChanged! !
 
