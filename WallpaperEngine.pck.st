@@ -1,6 +1,6 @@
-'From Cuis6.2 [latest update: #6156] on 26 May 2024 at 4:58:31 pm'!
+'From Cuis6.2 [latest update: #6156] on 26 May 2024 at 11:13:38 pm'!
 'Description '!
-!provides: 'WallpaperEngine' 1 1!
+!provides: 'WallpaperEngine' 1 2!
 SystemOrganization addCategory: #'WallpaperEngine-UI'!
 SystemOrganization addCategory: #'WallpaperEngine-Model'!
 
@@ -590,9 +590,9 @@ beSetBy: aWallpaperEngine
 color
 	^ color! !
 
-!SolidColorWallpaper methodsFor: 'public' stamp: 'S.V. 5/26/2024 02:20:19'!
+!SolidColorWallpaper methodsFor: 'public' stamp: 'S.V. 5/26/2024 23:13:11'!
 preview
-	^ GrayForm extent: self class previewExtent "TODO: find a way to create a color preview"! !
+	^ (ColorForm extent: self class previewExtent) mapColor: Color transparent to: color! !
 
 !SolidColorWallpaper class methodsFor: 'instance creation' stamp: 'S.V. 5/25/2024 21:55:16'!
 withName: aNameToIdentify withColor: aColorToDisplay
